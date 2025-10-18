@@ -1,0 +1,10 @@
+## Interface: 110205
+
+## Title: Home Bound
+## Author: Bettiold
+## Version: 1.0
+## Notes: Your ultimate companion for collecting housing rewards
+## IconTexture: 7252953
+## SavedVariables: hb_settings
+
+main.lua
