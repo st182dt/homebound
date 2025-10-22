@@ -660,3 +660,28 @@ SlashCmdList["HB"] = function()
   end
   frame:SetShown(not frame:IsShown())
 end
+
+-- Data Broker Support
+local ldb = LibStub:GetLibrary("LibDataBroker-1.1", true)
+if ldb then
+  local dataobj = ldb:NewDataObject("HomeBound", {
+    type = "launcher",
+    icon = 7252953,
+    label = "HomeBound",
+    text = "HomeBound",
+    name = "HomeBound",
+    OnClick = function(_, button)
+      if button == "LeftButton" then
+        if not frame:IsShown() then
+          BuildUI()
+        end
+        frame:SetShown(not frame:IsShown())
+      end
+    end
+  })
+
+  function dataobj:OnTooltipShow()
+    self:AddLine("|cffffffff" .. "Home Bound|r")
+    self:AddLine("|cffffff00" .. "Left-Click|r to toggle the Home Bound window")
+  end
+end

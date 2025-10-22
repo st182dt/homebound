@@ -6,5 +6,7 @@
 ## Notes: Your ultimate companion for collecting housing rewards
 ## IconTexture: 7252953
 ## SavedVariables: hb_settings
+## OptionalDeps: LibStub, CallbackHandler-1.0, LibDataBroker-1.1
 
+Libs\Libs.xml
 main.lua
