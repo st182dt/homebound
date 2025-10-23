@@ -327,6 +327,9 @@ local closeBtn = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
 closeBtn:SetPoint("TOPRIGHT", -2, -2)
 closeBtn:SetSize(28, 28)
 
+-- Register frame to close on ESC key
+tinsert(UISpecialFrames, "HB_MainFrame")
+
 local toggleBtn = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
 toggleBtn:SetSize(140, 24)
 toggleBtn:SetPoint("TOPLEFT", 10, -60)
